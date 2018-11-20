@@ -315,32 +315,6 @@ enable=true
   channel="hacklabto/lobby"
 
 [[gateway]]
-name="vnetwork"
-enable=true
-  [[gateway.inout]]
-  account="slack.civictechto"
-  channel="vnetwork"
-  [[gateway.inout]]
-  account="slack.g0v-tw"
-  channel="vnetwork"
-  #[[gateway.inout]]
-  #account="slack.progressivehacknight"
-  #channel="vnetwork"
-  [[gateway.inout]]
-  account="slack.betanyc"
-  channel="vnetwork"
-
-[[gateway]]
-name="holopolis"
-enable=true
-  [[gateway.inout]]
-  account="slack.civictechto"
-  channel="holopolis"
-  [[gateway.inout]]
-  account="slack.g0v-tw"
-  channel="holopolis"
-
-[[gateway]]
 name="metapolis-gitter"
 enable=true
   [[gateway.inout]]
