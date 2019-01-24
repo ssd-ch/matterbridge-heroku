@@ -1,5 +1,6 @@
 [general]
 RemoteNickFormat="{NICK} ({BRIDGE}): "
+PreserveThreading=true
 # Show messages announcing when people arrive/leave remote channels
 
 #[slack.example]
