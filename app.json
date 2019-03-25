@@ -1,8 +1,8 @@
 {
   "name": "Matterbridge-Heroku",
   "description": "Deploy Matterbridge to Heroku",
-  "repository": "https://github.com/cadecairos/matterbridge-heroku",
-  "keywords": ["mattermost", "matterbridge", "IRC"],
+  "repository": "https://github.com/pim-shimane/matterbridge-heroku",
+  "keywords": ["mattermost", "matterbridge", "slack", "discord"],
   "success_url": "/",
   "buildpacks": [
     {
