@@ -24,9 +24,9 @@ name = "mygateway"
 enable=true
 
     [[gateway.inout]]
-    account = "discord"
+    account = "discord.pim"
     channel="${DISCORD_CH1}"
 
     [[gateway.inout]]
-    account ="slack"
+    account ="slack.pim"
     channel = "${SLACK_CH1}"
