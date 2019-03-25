@@ -28,7 +28,7 @@ trap _term SIGTERM
 ####################
 # Start Matterbridge #
 ####################
-./matterbridge -conf=config/config-heroku.toml &
+./matterbridge -conf config/config-heroku.toml &
 
 PID=$!
 
