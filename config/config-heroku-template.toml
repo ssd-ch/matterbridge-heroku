@@ -25,8 +25,8 @@ enable=true
 
     [[gateway.inout]]
     account = "discord"
-    channel="discord練習・開発"
+    channel="${DISCORD_CH1}"
 
     [[gateway.inout]]
     account ="slack"
-    channel = "slack練習用"
+    channel = "${SLACK_CH1}"
