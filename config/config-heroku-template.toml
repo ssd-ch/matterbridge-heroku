@@ -21,7 +21,7 @@ Server="${DISCORD_SERVER_NAME}"
 
 [[gateway]]
 name = "mygateway"
-enable=false
+enable=true
 
     [[gateway.inout]]
     account = "discord"
