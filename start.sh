@@ -3,15 +3,11 @@
 ###############################################################################################
 # Apply some defaults values, and remove quotes that Heroku adds to truthy and numeric values #
 ###############################################################################################
-
-export IRC_USE_TLS=`echo ${UseIRC_USE_TLSTLS:=true} | tr -d \"`
-export IRC_USE_SASL=`echo ${IRC_USE_SASL:=true} | tr -d \"`
-export IRC_SKIP_TLS_VERIFY=`echo ${IRC_SKIP_TLS_VERIFY:=false} | tr -d \"`
-export MATTERMOST_NO_TLS=`echo ${MATTERMOST_NO_TLS:=false} | tr -d \"`
-export MATTERMOST_SKIP_TLS_VERIFY=`echo ${MATTERMOST_SKIP_TLS_VERIFY:=false} | tr -d \"`
-export MATTERMOST_SHOW_JOIN_PART=`echo ${MATTERMOST_SHOW_JOIN_PART:=false} | tr -d \"`
-export MATTERMOST_PREFIX_MSG_WITH_NICK=`echo ${MATTERMOST_PREFIX_MSG_WITH_NICK:=false} | tr -d \"`
-export MATTERMOST_NICKS_PER_ROW=`echo ${MATTERMOST_NICKS_PER_ROW:=4} | tr -d \"`
+#
+##
+### set env varlues in https://dashboard.heroku.com/apps/{heroku_app_name}/settings - Config Vars
+##
+#
 
 ########################################################################
 # Write Config variables in envrionment to the configuration JSON file #
