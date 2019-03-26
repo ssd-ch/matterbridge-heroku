@@ -1,6 +1,7 @@
 [general]
 RemoteNickFormat="{NICK} : "
 PreserveThreading=true
+MediaDownloadSize=8000000
 # Show messages announcing when people arrive/leave remote channels
 
 #[slack.example]
