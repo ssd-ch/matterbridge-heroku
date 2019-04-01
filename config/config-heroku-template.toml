@@ -1,7 +1,7 @@
 [general]
-RemoteNickFormat="{NICK} : "
-PreserveThreading=true
-MediaDownloadSize=8000000
+RemoteNickFormat = "{NICK} : "
+PreserveThreading = true
+MediaDownloadSize = 8000000
 # Show messages announcing when people arrive/leave remote channels
 
 #[slack.example]
@@ -12,22 +12,98 @@ MediaDownloadSize=8000000
 
 [slack]
 [slack.pim]
-Token="${SLACK_TOKEN}"
-PrefixMessagesWithNick=true
+Token = "${SLACK_TOKEN}"
+PrefixMessagesWithNick = true
 
 [discord]
 [discord.pim]
-Token="${DISCORD_TOKEN}"
-Server="${DISCORD_SERVER_NAME}"
+Token = "${DISCORD_TOKEN}"
+Server = "${DISCORD_SERVER_NAME}"
 
 [[gateway]]
-name = "mygateway"
-enable=true
+name = "gateway1"
+enable = true
 
     [[gateway.inout]]
     account = "discord.pim"
-    channel="${DISCORD_CH1}"
+    channel = "discord練習・開発"
 
     [[gateway.inout]]
-    account ="slack.pim"
-    channel = "${SLACK_CH1}"
+    account = "slack.pim"
+    channel = "slack練習用"
+
+[[gateway]]
+name = "gateway2"
+enable = true
+
+    [[gateway.inout]]
+    account = "discord.pim"
+    channel = "general"
+
+    [[gateway.inout]]
+    account = "slack.pim"
+    channel = "general"
+
+[[gateway]]
+name = "gateway3"
+enable = true
+
+    [[gateway.inout]]
+    account = "discord.pim"
+    channel = "全体連絡"
+
+    [[gateway.inout]]
+    account = "slack.pim"
+    channel = "イベント_連絡事項"
+
+[[gateway]]
+name = "gateway4"
+enable = true
+
+    [[gateway.inout]]
+    account = "discord.pim"
+    channel = "自己紹介"
+
+    [[gateway.inout]]
+    account = "slack.pim"
+    channel = "自己紹介"
+
+[[gateway]]
+name = "gateway5"
+enable = true
+
+    [[gateway.in]]
+    account = "discord.pim"
+    channel = "シェア・雑談"
+
+    [[gateway.out]]
+    account = "slack.pim"
+    channel = "雑談"
+
+[[gateway]]
+name = "gateway6"
+enable = true
+
+    [[gateway.out]]
+    account = "discord.pim"
+    channel = "シェア・雑談"
+
+    [[gateway.in]]
+    account = "slack.pim"
+    channel = "シェア"
+
+    [[gateway.in]]
+    account = "slack.pim"
+    channel = "雑談"
+
+[[gateway]]
+name = "gateway7"
+enable = true
+
+    [[gateway.inout]]
+    account = "discord.pim"
+    channel = "進捗・成果報告"
+
+    [[gateway.inout]]
+    account = "slack.pim"
+    channel = "進捗どうですか"
