@@ -24,11 +24,11 @@ Server = "${DISCORD_SERVER_NAME}"
 name = "gateway1"
 enable = true
 
-    [[gateway.inout]]
+    [[gateway.out]]
     account = "discord.pim"
     channel = "discord練習・開発"
 
-    [[gateway.inout]]
+    [[gateway.in]]
     account = "slack.pim"
     channel = "slack練習用"
 
@@ -36,11 +36,11 @@ enable = true
 name = "gateway2"
 enable = true
 
-    [[gateway.inout]]
+    [[gateway.out]]
     account = "discord.pim"
     channel = "general"
 
-    [[gateway.inout]]
+    [[gateway.in]]
     account = "slack.pim"
     channel = "general"
 
@@ -48,11 +48,11 @@ enable = true
 name = "gateway3"
 enable = true
 
-    [[gateway.inout]]
+    [[gateway.out]]
     account = "discord.pim"
     channel = "全体連絡"
 
-    [[gateway.inout]]
+    [[gateway.in]]
     account = "slack.pim"
     channel = "イベント_連絡事項"
 
@@ -60,17 +60,17 @@ enable = true
 name = "gateway4"
 enable = true
 
-    [[gateway.inout]]
+    [[gateway.out]]
     account = "discord.pim"
     channel = "自己紹介"
 
-    [[gateway.inout]]
+    [[gateway.in]]
     account = "slack.pim"
     channel = "自己紹介"
 
 [[gateway]]
 name = "gateway5"
-enable = true
+enable = false
 
     [[gateway.in]]
     account = "discord.pim"
@@ -100,10 +100,10 @@ enable = true
 name = "gateway7"
 enable = true
 
-    [[gateway.inout]]
+    [[gateway.out]]
     account = "discord.pim"
     channel = "進捗・成果報告"
 
-    [[gateway.inout]]
+    [[gateway.in]]
     account = "slack.pim"
     channel = "進捗どうですか"
