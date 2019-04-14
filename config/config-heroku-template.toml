@@ -42,7 +42,7 @@ enable = true
 
     [[gateway.in]]
     account = "slack.pim"
-    channel = "general"
+    channel = "雑談シェア"
 
 [[gateway]]
 name = "gateway3"
@@ -70,34 +70,6 @@ enable = true
 
 [[gateway]]
 name = "gateway5"
-enable = false
-
-    [[gateway.in]]
-    account = "discord.pim"
-    channel = "シェア・雑談"
-
-    [[gateway.out]]
-    account = "slack.pim"
-    channel = "雑談"
-
-[[gateway]]
-name = "gateway6"
-enable = true
-
-    [[gateway.out]]
-    account = "discord.pim"
-    channel = "シェア・雑談"
-
-    [[gateway.in]]
-    account = "slack.pim"
-    channel = "シェア"
-
-    [[gateway.in]]
-    account = "slack.pim"
-    channel = "雑談"
-
-[[gateway]]
-name = "gateway7"
 enable = true
 
     [[gateway.out]]
@@ -107,3 +79,15 @@ enable = true
     [[gateway.in]]
     account = "slack.pim"
     channel = "進捗どうですか"
+
+[[gateway]]
+name = "gateway6"
+enable = true
+
+    [[gateway.out]]
+    account = "discord.pim"
+    channel = "就職活動インターン"
+
+    [[gateway.in]]
+    account = "slack.pim"
+    channel = "就職活動インターン"
