@@ -91,3 +91,15 @@ enable = true
     [[gateway.in]]
     account = "slack.pim"
     channel = "就職活動インターン"
+
+[[gateway]]
+name = "gateway7"
+enable = true
+
+    [[gateway.out]]
+    account = "discord.pim"
+    channel = "pim運営"
+
+    [[gateway.in]]
+    account = "slack.pim"
+    channel = "pim運営"
