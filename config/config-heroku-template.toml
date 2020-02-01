@@ -21,18 +21,6 @@ Token = "${DISCORD_TOKEN}"
 Server = "${DISCORD_SERVER_NAME}"
 
 [[gateway]]
-name = "gateway1"
-enable = true
-
-    [[gateway.out]]
-    account = "discord.pim"
-    channel = "discord練習・開発"
-
-    [[gateway.in]]
-    account = "slack.pim"
-    channel = "slack練習用"
-
-[[gateway]]
 name = "gateway2"
 enable = true
 
